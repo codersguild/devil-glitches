@@ -71,7 +71,7 @@ function playerUdate(dt){
   hero[5]%=360
 
   var killer = collideElements(hero);
-  if(killer)die(killer);
+  // if(killer)die(killer);
   // if fire shots fire
   if(coords[2]&&hero[6]<=0&&hero[8]<=0){
     bullets.push([hero[0]+shake(1, 2+hero[7]/30), hero[1]+shake(1, 2+hero[7]/30), 2, hero[3]+shake(1, 0.05+0.001*hero[7])])
